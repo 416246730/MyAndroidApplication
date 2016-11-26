@@ -1,43 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_horizontal">
-
-    <TextView
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:fillViewport="false">
+    <LinearLayout
+        android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/app_index_title"
-        android:textAlignment="center"
-        android:paddingTop="32dp"
-        android:paddingBottom="16dp"
-        android:textAppearance="?android:textAppearanceLarge"/>
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
-    <Button
-        android:id="@+id/index_cin_button"
-        android:text="@string/app_index_cin"
-        style="@style/IndexButtonStyle"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_index_title"
+            android:textAlignment="center"
+            android:paddingTop="@dimen/vertical_margin_or_padding_4"
+            android:paddingBottom="@dimen/vertical_margin_or_padding_2"
+            android:textAppearance="?android:textAppearanceLarge"/>
 
-    <Button
-        android:id="@+id/index_stock_button"
-        android:text="@string/app_index_stock"
-        style="@style/IndexButtonStyle"/>
+        <Button
+            android:id="@+id/index_cin_button"
+            android:text="@string/app_index_cin"
+            style="@style/IndexButtonStyle"/>
 
-    <Button
-        android:id="@+id/index_reader_button"
-        android:text="@string/app_index_reader"
-        style="@style/IndexButtonStyle"/>
+        <Button
+            android:id="@+id/index_stock_button"
+            android:text="@string/app_index_stock"
+            style="@style/IndexButtonStyle"/>
 
-    <Button
-        android:id="@+id/index_news_button"
-        android:text="@string/app_index_news"
-        style="@style/IndexButtonStyle"/>
+        <Button
+            android:id="@+id/index_reader_button"
+            android:text="@string/app_index_reader"
+            style="@style/IndexButtonStyle"/>
 
-    <Button
-        android:id="@+id/index_graduation_button"
-        android:text="@string/app_index_graduation"
-        style="@style/IndexButtonStyle"/>
-</LinearLayout>
+        <Button
+            android:id="@+id/index_news_button"
+            android:text="@string/app_index_news"
+            style="@style/IndexButtonStyle"/>
+
+        <Button
+            android:id="@+id/index_graduation_button"
+            android:text="@string/app_index_graduation"
+            style="@style/IndexButtonStyle"/>
+    </LinearLayout>
+</ScrollView>
